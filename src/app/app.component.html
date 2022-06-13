@@ -1,8 +1,17 @@
-<h1>
-    ngStore
-</h1>
-<button mat-button routerLink="/">Home</button>
-<button mat-button routerLink="/about">About</button>
-<hr>
+<div>
+    <nav class="navbar navbar-expand navbar-dark bg-primary">
+        <a href="#" class="navbar-brand">Freaky Jolly</a>
+        <div class="navbar-nav mr-auto">
+            <li class="nav-item" routerLink="books" routerLinkActive="active">
+                <a href="/books" class="nav-link">List of Books</a>
+            </li>
+            <li class="nav-item" routerLink="add" routerLinkActive="active">
+                <a href="/add" class="nav-link">Add a Book</a>
+            </li>
+        </div>
+    </nav>
 
-<router-outlet></router-outlet>
+    <div class="container mt-5">
+        <router-outlet></router-outlet>
+    </div>
+</div>
